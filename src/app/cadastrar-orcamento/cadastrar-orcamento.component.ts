@@ -40,6 +40,9 @@ export class CadastrarOrcamentoComponent implements OnInit {
     this.mobilia_altura = null;
     this.mobilia_profundidade = null;
   }
+  excluir(i){
+    this.mobilias.splice(i,1);
+  }
 
   salvar() {
     let orcamento = {
